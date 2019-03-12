@@ -1,0 +1,25 @@
+<html>
+    <head>
+            <style>       p {
+                    font-family: verdana;
+                    font-size: 50px;
+                  }</style>
+             
+    </head>
+
+ 
+        <p id='time'></p>
+
+        <script>
+                //  alert("hello world")
+              function clock(){
+              var d =new Date();
+              var e =d.toLocaleTimeString();
+              console.log(e);
+              document.getElementById('time').innerHTML= e;
+            }
+
+              setInterval(clock,1000)
+              </script>
+
+</html>
